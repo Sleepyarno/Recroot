@@ -8,3 +8,4 @@ dist/
 
 # system-specific clutter
 *.log
+n8n/
