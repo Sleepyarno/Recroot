@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar styles - retained from project summary, assuming these are desired globally */
+.simple-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.simple-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #4B5563; /* gray-600 */
+  border-radius: 10px;
+}
+.simple-scrollbar::-webkit-scrollbar-track {
+  background-color: #1F2937; /* gray-800 */
+}
+.simple-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #4B5563 #1F2937; /* thumb and track */
+}
