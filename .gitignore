@@ -3,8 +3,63 @@ node_modules/
 dist/
 .DS_Store
 .env
+.env.*
+!.env.example
 .n8n/            # n8n's SQLite DB & credential blobs – keep them out of Git
 *.sqlite
 
+# Credential files
+credentials.json
+secrets.json
+config.json
+.secrets
+.credentials
+
+# API Keys and tokens
+**/api-keys.json
+**/tokens.json
+**/*secret*
+**/*credential*
+**/*password*
+**/*token*
+**/*key*.json
+**/*auth*.json
+
+# Cloud provider credentials
+.aws/
+.gcp/
+.azure/
+service-account*.json
+gcloud-service-key.json
+
+# Database credentials
+database.json
+db-config.json
+
+# SSL certificates and keys
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
 # system-specific clutter
 *.log
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+.temp/
+
+# IDE and editor files
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+Thumbs.db
+.DS_Store?
+ehthumbs.db
+Icon?
